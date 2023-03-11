@@ -103,7 +103,6 @@ Grid.prototype.getRowIndices = function (index) {
 
 Grid.prototype.getColumnValues = function (index) {
     if (index !== 0 && index !== 1 && index !== 2) {
-        console.error("Wrong arg for getColumnValues!")
         return undefinen
     }
     var i, column = []
@@ -115,7 +114,6 @@ Grid.prototype.getColumnValues = function (index) {
 
 Grid.prototype.getColumnIndices = function (index) {
     if (index !== 0 && index !== 1 && index !== 2) {
-        console.error("Wrong arg for getColumnIndices!")
         return undefined
     }
     var i, column = []
