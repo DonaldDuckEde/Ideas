@@ -280,6 +280,7 @@ function restartGame(ask) {
 
 
 
+
 function makeComputerMove() {
     if (gameOver) {
         return false;
