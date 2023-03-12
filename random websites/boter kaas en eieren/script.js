@@ -1,4 +1,5 @@
 "use strict"
+
 document.onkeypress = function (evt) {
     evt = evt || window.event;
     var modal = document.getElementsByClassName("modal")[0]
@@ -278,7 +279,7 @@ function restartGame(ask) {
 }
 
 
-
+// all code from now on is NOT my code
 
 
 function makeComputerMove() {
