@@ -18,3 +18,6 @@ def power(num1, num2):
     answer = num1 ** num2
     return answer
 
+def percentage(num1, num2):
+    answer = num1 / num2 * 100
+    return answer
