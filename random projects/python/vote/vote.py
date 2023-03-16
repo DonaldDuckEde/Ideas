@@ -15,5 +15,8 @@ def main():
     
     userId.append(int(tempId))
     
+    print("please type help for a list of commands.")
+    tempCommand = input("Command: ")
+    
     
 main()
