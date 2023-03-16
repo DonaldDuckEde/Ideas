@@ -18,5 +18,8 @@ def main():
     print("please type help for a list of commands.")
     tempCommand = input("Command: ")
     
+    if tempCommand == "vote":
+        vote = input("What would you like to vote for? ")
+        if vote == "":
     
 main()
