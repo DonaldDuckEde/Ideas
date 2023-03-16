@@ -10,20 +10,10 @@ def main():
     except ValueError():
         print("Please enter a valid number.")
         main()
-        
-    if tempId < 0:
-       main()
-    elif tempId > 0:
-        print("Checking user ID...")
-    else:
-        print("Unvalid input.")
-        main()
-       
-    if fullname == "":
-        print("Please enter something.")
-        main()
-    else:
-        print("Checking full name...")
-        print(f"Full name checked: {fullname}")
+
+    print("Welcome to the vote system.")
+    
     userId.append(int(tempId))
+    
+    
 main()
