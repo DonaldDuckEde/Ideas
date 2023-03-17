@@ -21,5 +21,6 @@ def main():
     if tempCommand == "vote":
         vote = input("What would you like to vote for? ")
         if vote == "":
+            print(f"you have voted for {vote}!")
     
 main()
