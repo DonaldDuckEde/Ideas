@@ -1,0 +1,11 @@
+.table{
+    border-color: black;
+    border-width: 1px;
+    width: 700px;
+    height: 700px;
+}
+td{
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+}
