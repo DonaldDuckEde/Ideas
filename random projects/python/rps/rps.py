@@ -3,15 +3,15 @@ import random
 print("Hello welcome to this rock, paper, scissors game!")
 print("Please type: 'r', 'p', or 's' for rock, paper, or scissors.")
 
-everyThingGood = True
+games = int(input("How many games would you like to play? "))
 
-wins, losses, ties = 0, 0, 0
+everyThingGood = True
 
 def rock_paper_scissors():
     user_choice = input("Enter your choice: ")
     
     if user_choice == "r" or user_choice == "p" or user_choice == "s":
-        everyThingGood = False
+        everyThingGood = False  
     else:
         print("Please enter a valid input.")
             
@@ -22,32 +22,24 @@ def rock_paper_scissors():
     elif computer_choice == "p":
         print("Paper")
     elif computer_choice == "s":
-        print("Scissors")
+        print("Scissors")    
     else:
         print("If this shows up, it means that something went terribly wrong.")            
     
     if user_choice == computer_choice:
         print("It's a tie!")
-        ties += 1
     elif user_choice == "r" and computer_choice == "s":
         print("You win!")
-        wins += 1
     elif user_choice == "r" and computer_choice == "p":
         print("You lose!")
-        losses += 1
     elif user_choice == "p" and computer_choice == "s":
         print("You win!")
-        wins += 1
     elif user_choice == "p" and computer_choice == "r":
         print("You lose!")
-        losses += 1
     elif user_choice == "s" and computer_choice == "r":
         print("You win!")
-        wins += 1
     elif user_choice == "s" and computer_choice == "p":
         print("You lose!")
-        losses += 1
-    
-    print(f"Wins: {wins}, Losses: {losses}, Ties: {ties}")    
 
-rock_paper_scissors()        
+for i in range(games):
+    rock_paper_scissors()
