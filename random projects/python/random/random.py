@@ -1,6 +1,6 @@
 import random
 
-print("Hello welcome to the random number generator")
+print("Hello welcome to the random number generator.")
 
 genNums = []
 
@@ -12,10 +12,11 @@ def genNum():
         
     if action == "help":
         help("help")
-
-    num1 = int(input("From: "))
-    num2 = int(input("To: "))
-    
+    try:
+        num1 = int(input("From: "))
+        num2 = int(input("To: "))
+    except ValueError():
+        print("Please enter a valid input.")
     if action == "":
         generatedNumber = random.randint(a, b)
         
