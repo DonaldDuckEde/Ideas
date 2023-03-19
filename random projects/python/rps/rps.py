@@ -11,9 +11,10 @@ def rock_paper_scissors():
     user_choice = input("Enter your choice: ")
     
     if user_choice == "r" or user_choice == "p" or user_choice == "s":
-        everyThingGood = False  
+        everyThingGood = True  
     else:
         print("Please enter a valid input.")
+        everyThingGood = False
             
     computer_choice = random.choice(["r", "p", "s"])
     
