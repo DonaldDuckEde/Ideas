@@ -11,5 +11,6 @@ def randomOption():
             items.append(tempItem)
         elif tempItem == "done":
             print(random.choice(items))
+            keepAdding = False
     
 randomOption()
