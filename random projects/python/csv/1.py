@@ -14,5 +14,5 @@ with open(file, mode='r') as csv_file:
         
         totalSum = (num1, "X",  num2, "=", answer)
     
-    print(totalSum)   
+    print(totalSum)
         
