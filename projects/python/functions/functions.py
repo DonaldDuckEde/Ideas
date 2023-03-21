@@ -1,23 +1,14 @@
-def plus(num1, num2):
-    answer = num1 + num2
-    return answer
+import random
+import string
 
-def square(num):
-    answer = num * num
-    return square
+def generatepassword(length):
+    pw = ""
+    for i in range(length):
+        pw += random.choice(string.ascii_letters + string.digits)
+    return pw
 
-def minus(num1, num2):
-    answer = num1 - num2
-    return answer
-
-def divide(num1, num2):
-    answer = num1 / num2
-    return answer
-
-def power(num1, num2):
-    answer = num1 ** num2
-    return answer
-
-def percentage(num1, num2):
-    answer = num1 / num2 * 100
-    return answer
+def randomChar(type):
+    if type == "upper":
+        random.choice(string.ascii_uppercase)
+    elif type == "lower":
+        random.choice(string.ascii_lowercase)
