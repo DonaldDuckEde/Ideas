@@ -7,6 +7,7 @@ btn.addEventListener("click", () => {
   if (date1.length == 0 || date2.length == 0) {
     result.innerHTML = "<span>please enter valid dates</span>"
   }
+  // changes
   else {
     if (date1 > date2) {
       result.innerHTML = "Date 1 is <b>greater</b> than Date 2"
